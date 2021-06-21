@@ -1,0 +1,2 @@
+# VkBotLongPoll
+Пример ВК бота.
