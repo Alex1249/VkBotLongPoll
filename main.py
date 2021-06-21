@@ -24,7 +24,7 @@ while True:
 				conversation_message_id=message['conversation_message_id']
 				fwd_messages=message['fwd_messages']
 				if text=='.пинг':
-					pong=f'Понг лп: {abs(round(datetime.now().timestamp()-time_, 3))}'
+					pong=f'Понг бота: {abs(round(datetime.now().timestamp()-time_, 3))}'
 					vk.messages.send(peer_id=peer_id, message=pong, random_id=random.randint(1, 10e9))
 	except:
 		print('Я падаю.')
