@@ -13,7 +13,6 @@ longpoll=VkBotLongPoll(_vk_, group_id=_id_)
 while True:
 	try:
 		for event in longpoll.listen():
-			print(event)
 			if event.type == VkBotEventType.MESSAGE_NEW:
 				message=event.message
 				text=message['text']
